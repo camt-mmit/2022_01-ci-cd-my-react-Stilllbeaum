@@ -30,7 +30,7 @@ jobs:
           git merge feature-01
           git push origin main
 
-deploy-gh-pages:
+deploy-gh-pages: 
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
