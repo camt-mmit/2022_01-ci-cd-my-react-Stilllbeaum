@@ -47,7 +47,7 @@ jobs:
           run: npm install
         - name: Build project
           run: PUBLIC_URL=/${{ github.event.repository.name }} npm run build
-        - run: |
+          run: |
             mkdir ./gh-pages
             git init -b gh-pages ./gh-pages
             cd ./gh-pages
