@@ -16,7 +16,7 @@ jobs:
           node-version: "16"
           cache: 'npm'
       - name: Setup git user
-      - run: |
+        run: |
           git config --global user.email "${{ github.event.pusher.email }}"
           git config --global user.name "${{ github.actor }}"
       - name: Install dependencies
@@ -24,7 +24,7 @@ jobs:
       - name: Test project
         run: npm run test
       - name: Merge to main
-      - run: |
+        run: |
           git fetch --unshellow
           git checkout main 
           git merge feature-01
