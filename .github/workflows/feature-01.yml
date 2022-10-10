@@ -22,7 +22,7 @@ jobs:
       - name: Test project
         run: npm run test
       - name: Merge to main
-        run: |
+      - run: |
           git fetch --unshellow
           git merge
        
